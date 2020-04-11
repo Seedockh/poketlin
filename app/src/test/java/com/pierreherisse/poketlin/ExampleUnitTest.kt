@@ -1,4 +1,4 @@
-package com.seedockh.poketlin
+package com.pierreherisse.poketlin
 
 import org.junit.Test
 
