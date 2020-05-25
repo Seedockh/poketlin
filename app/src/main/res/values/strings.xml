@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Poketlin</string>
-    <string name="api_key">yI4gZlcqxUfvSFwqegyy6a9XI1yo1VLRcIWFaVA7</string>
-    <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="change_layout_manager">Change Layout</string>
+    <string name="image_alt">pokemon image</string>
 </resources>
