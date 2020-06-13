@@ -7,7 +7,7 @@ import kotlinx.android.parcel.Parcelize
 import java.io.Serializable
 
 @Parcelize
-data class ApiResponse (
+data class ApiListResponse (
     @field:Json(name="count")
     val count: Int,
     @field:Json(name = "next")
@@ -16,4 +16,12 @@ data class ApiResponse (
     val previous: String?,
     @field:Json(name = "results")
     val results: List<Pokemon>
+): Serializable, Parcelable
+
+@Parcelize
+data class ApiDetailsResponse (
+    @field:Json(name="id")
+    val id: String,
+    @field:Json(name="name")
+    val name: String
 ): Serializable, Parcelable

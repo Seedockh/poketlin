@@ -1,5 +1,6 @@
 package com.pierreherisse.poketlin.pokemon
 
+import android.util.Log
 import com.pierreherisse.poketlin.network.Api
 
 class PokemonRepository  {
@@ -11,5 +12,11 @@ class PokemonRepository  {
             return pokemonsResponse.body()?.results
         }
         return null
+    }
+
+    suspend fun getDetails(id: String) {
+        val detailsResponse = pokemonWebService.getPokemon(id)
+
+        Log.d("API RESPONSE", "$detailsResponse")
     }
 }
